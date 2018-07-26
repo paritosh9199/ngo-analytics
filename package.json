@@ -1,0 +1,14 @@
+{
+  "name": "ngo-analytics",
+  "version": "1.0.0",
+  "description": "This is ngo analytics app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paritosh and Rahul",
+  "license": "ISC",
+  "dependencies": {
+    "csv-query": "0.0.4"
+  }
+}
