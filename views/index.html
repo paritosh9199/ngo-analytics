@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Andhra Pradesh & Telanagana</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="ngo.js"></script>
+</head>
+<body>
+    
+    
+       <div class="col-lg-2" style="max-width":30px;margin:800px auto;>
+           <img src="images/poll-box.png" class="img-thumbnail" width="200" height="200"alt="Electionsurvey">
+      </div>
+    <div class="container">
+    <h2>Fill the below details to view Survey Results </h2>
+    </div>
+    
+      
+     <div class="container">
+   
+	<form class="form-horizontal" role="form">
+	   <div class="form-group">
+	      <label for="pcno" class ="control-label col-sm-3">PC No:</label>
+		<div class="col-sm-8">
+	      <input type="number" min='0' id="pcno" >
+		</div>
+	    </div>
+	   <div class="form-group">
+	      <label for="acno" class ="control-label col-sm-3">AC No:</label>
+		<div class="col-sm-8">
+	      <input type="number" min='0' id="acno">
+		</div>
+	    </div>
+	   <div class="form-group">
+	      <label for="psno" class ="control-label col-sm-3">Polling Station No:</label>
+		<div class="col-sm-8">
+	      <input type="number" min='0' id="psno" >
+		</div>
+	    </div>
+	   <div class="form-group">
+	      <label for="age" class ="control-label col-sm-3">Age:</label>
+		<div class="col-sm-8">
+	      <input type="number" min='0' id="age">
+		</div>
+	    </div>
+          <div class="form-group">
+	      <label for="caste" class ="control-label col-sm-3">Caste:</label>
+		<div class="col-sm-8">
+	      <input type="text"  id="caste" >
+		</div>
+	    </div>
+          <div class="form-group">
+	      <label for="Religion" class ="control-label col-sm-3">Religion:</label>
+		<div class="col-sm-8">
+	      <input type="text" id="religion">
+		</div>
+	    </div>
+          <div class="form-group">
+	      <label for="prof" class ="control-label col-sm-3">Profession:</label>
+		<div class="col-sm-8">
+	      <input type="text" id="prof">
+		</div>
+	    </div>
+            <div class="form-group">
+	      <label for="eduqal" class ="control-label col-sm-3">Educational Qualification:</label>
+		<div class="col-sm-8">
+	      <input type="text" id="eduqual">
+		</div>
+	    </div>
+            <div class="form-group">
+	      <label for="hno" class ="control-label col-sm-3">House No:</label>
+		<div class="col-sm-8">
+	      <input type="text" id="hno">
+		</div>
+	    </div>
+            <div class="form-group">
+	      <label for="mndl" class ="control-label col-sm-3">Mandal:</label>
+		<div class="col-sm-8">
+	      <input type="text" id="mndl">
+		</div>
+	    </div>
+            <div class="form-group">
+	      <label for="rdiv" class ="control-label col-sm-3">Revenue Division:</label>
+		<div class="col-sm-8">
+	      <input type="text" id="rdiv">
+		</div>
+	    </div>
+            <div class="form-group">
+	      <label for="pdiv" class ="control-label col-sm-3">Panchayat:</label>
+		<div class="col-sm-8">
+	      <input type="text" id="pdiv">
+		</div>
+	    </div>
+        
+         <a href="#upload" class="btn btn-success" data-toggle="collapse">Upload file</a>
+        <div id="upload" class="collapse">
+         <div class="form-group">
+         <div class="col-sm-8">
+      <input id="upload" type="file" accept=".csv.xlsx">
+    </div>
+            </div></div>
+        
+        <div class="form-group">
+            <div class="control-label col-sm-5">
+        <button type="button"  class="btn btn-success">Submit</button>
+        <button type="button" class="btn btn-danger">Reset</button>
+        </div>
+        </div>
+	</form>
+</div>
+    </body>
+</html>
