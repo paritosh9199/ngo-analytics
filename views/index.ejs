@@ -7,40 +7,55 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-
+	
+<link rel="stylesheet" href="index.css">
+	
 </head>
 
 <body>
 
+	<div style="width:600px; margin:0 auto;"><center>
+	<button type="button" class="btn btn-primary btn-lg" >Andhra Pradesh</button>
+	<button type="button" class="btn btn-primary btn-lg">Telanagana</button>
+</center>
+</div>
 
 
 
-
-	<div class="container">
-		<h1>Select or drag and drop a csv file to get started!</h1>
+	
+<div class="container ">
+	
+	<h1>Select or drag and drop a csv file to get started!</h1>
+	
 		<!-- <div id="upload" class="collapse">
 			<div class="form-group"> -->
-		<form id="file-form" action="handler.php" method="POST">
-			<input type="file" id="file-select" name="photos[]" />
-			<button type="submit" class="btn btn-info" id="upload-button">Upload</button>
-		</form>
+				<div class="col-sm-8">
+					<input id="upload" type="file" accept=".csv,.xlsx">
+				</div>
+				<center>
+	
+				<button id="btn-submit"type="button" class="btn btn-primary btn-small" >Submit</button>
+</center>			
+			
+			</div>
 		<!-- </div>
-		</div> -->
+	</div> -->
 
 	</div>
-	<div class="container">
+	<div class="container center_div">
+		<div class="center_div">		
 		<h2>Fill the below details to view Survey Results </h2>
 
-
+          <div class="center_div2">
 		<form class="form-horizontal" role="form">
 			<div class="form-group">
-				<label for="pcno" class="control-label col-sm-3">PC No:</label>
+				<label for="pcno" class="control-label col-sm-3">Parliamentary Constituency No:</label>
 				<div class="col-sm-8">
 					<input type="number" min='0' id="pcno">
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="acno" class="control-label col-sm-3">AC No:</label>
+				<label for="acno" class="control-label col-sm-3">Assembly Constituency No:</label>
 				<div class="col-sm-8">
 					<input type="number" min='0' id="acno">
 				</div>
@@ -115,8 +130,126 @@
 				</div>
 			</div>
 		</form>
+		<!-- </div> -->
+		
 	</div>
 
+	<hr>
+	<hr>
+	<hr>
+
+	
+	<div class="container ">
+			<h1>Select or drag and drop a csv file to get started!</h1>
+			<a href="#upload" class="btn btn-success" data-toggle="collapse">Upload file</a>
+			<!-- <div id="upload" class="collapse">
+				<div class="form-group"> -->
+					<div class="col-sm-8">
+						<input id="upload" type="file" accept=".csv,.xlsx">
+					</div>
+				<!-- </div>
+			</div> -->
+	
+		</div>
+		<div class="container center_div">
+			<h2>Fill the below details to view Survey Results </h2>
+	
+	
+			<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label for="pcno" class="control-label col-sm-3">PC No:</label>
+					<div class="col-sm-8">
+						<input type="number" min='0'id="pcno">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="acno" class="control-label col-sm-3">AC No:</label>
+					<div class="col-sm-8">
+						<input type="number" min='0' id="acno">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="psno" class="control-label col-sm-3">Polling Station No:</label>
+					<div class="col-sm-8">
+						<input type="number" min='0' id="psno">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="age" class="control-label col-sm-3">Age:</label>
+					<div class="col-sm-8">
+						<input type="number" min='0' id="age">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="caste" class="control-label col-sm-3">Caste:</label>
+					<div class="col-sm-8">
+						<input type="text" id="caste">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="Religion" class="control-label col-sm-3">Religion:</label>
+					<div class="col-sm-8">
+						  <select name="religion" style="width: 173px; height: 25px;">
+							  <option value="Select all"  ></option>
+		<option value="Hindu" class="">Hindu</option>
+		<option value="Muslim">Muslim</option>
+		<option value="Christian">Christian</option> 
+		<option value="Sikh">Sikh</option>
+	  </select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="prof" class="control-label col-sm-3">Profession:</label>
+					<div class="col-sm-8">
+						<input type="text" id="prof">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="eduqal" class="control-label col-sm-3">Educational Qualification:</label>
+					<div class="col-sm-8">
+						<input type="text" id="eduqual">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="hno" class="control-label col-sm-3">House No:</label>
+					<div class="col-sm-8">
+						<input type="text" id="hno">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="mndl" class="control-label col-sm-3">Mandal:</label>
+					<div class="col-sm-8">
+						<input type="text" id="mndl">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="rdiv" class="control-label col-sm-3">Revenue Division:</label>
+					<div class="col-sm-8">
+						<input type="text" id="rdiv">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="pdiv" class="control-label col-sm-3">Panchayat:</label>
+					<div class="col-sm-8">
+						<input type="text" id="pdiv">
+					</div>
+				</div>
+	
+	
+	
+				<div class="form-group">
+					<div class="control-label col-sm-5">
+						<button type="button" class="btn btn-success">Submit</button>
+						<button type="button" class="btn btn-danger">Reset</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<hr>
+		<hr>
+		<hr>
+		
 
 	<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
 	<script>
